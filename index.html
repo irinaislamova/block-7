@@ -53,15 +53,15 @@
     
           
       <div class="main-menu">
-        <div class="main-menu__burger"></div>
+        <div class="main-menu__burger primary-btn"></div>
         <div class="main-menu__border768"></div>
         <a href="#" class="main-menu__icon"><img src="images/logo.svg" alt="Логотип"></a>
-        <div class="main-menu__phone"></div>
-        <div class="main-menu__chat"></div>
-        <div class="main-menu__profile"></div>
+        <button class="btn-call main-menu__phone primary-btn" href="tel:79999999999" title="Позвонить"></button>
+        <button class="btn-mail main-menu__chat main-menu__phone" href="mailto:dehoff.egor@gmail.com" title="Написать"></button>
+        <div class="main-menu__profile primary-btn"></div>
         <div class="main-menu__border"></div>
-        <div class="main-menu__tools"></div>
-        <div class="main-menu__status"></div>
+        <div class="main-menu__tools primary-btn"></div>
+        <div class="main-menu__status primary-btn"></div>
       </div>
       <div class="main-wrapper">
         <h1 class="main-title">Услуги и сервисы</h1>
@@ -87,8 +87,8 @@
             <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
             <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>       
           </div>
-          <button class="link-more main__button--more" href="#">Читать далее</button>
-          <button class="link-hide" href="#">Скрыть</button>
+          <button class="link-more main__button--open" href="#">Читать далее</button>
+          <button class="link-hide main__button--hide" href="#">Скрыть</button>
         </div>
         <img src="images/wall.jpg" alt="Главное изображение" class="main-img">
       </div>
@@ -132,7 +132,7 @@
         </div>
         <div class="pagination brands-pagination"></div>
         <button class="link-more brands__link--open" href="#">Показать все</button>     
-        <button class="link-more brands__link--hide" href="#" style="display: none;">Скрыть</button>     
+        <button class="link-hide brands__link--hide" href="#" style="display: none;">Скрыть</button>     
       </section>
     
       <section class="tech-repair" id="repair-devices">
@@ -177,7 +177,7 @@
         </div>
         <div class="pagination tech-repair-pagination"></div>
         <button class="link-more tech-repair__arrows-link" href="#">Показать все (9)</button>
-        <button class="link-more tech-repair__arrows-link--hide">Скрыть</button>
+        <button class="link-hide tech-repair__arrows-link--hide">Скрыть</button>
       </section>
       <section class="prices">
         <h2 class="prices__title">ЦЕНЫ НА УСЛУГИ</h2>
@@ -238,7 +238,8 @@
       </p>
       <a class="privacy-policy" href="#">Политика конфиденциальности</a>
       <p class="public-rules page-footer__public-rules">Информация, размещенная на данной странице, не является публичной офертой</p>
-    </footer>
+    </footer> 
+    </div> 
 
     <section class="callback-modal">
       <h1 class="callback-modal__title">Заказать звонок</h1>
@@ -264,11 +265,7 @@
       </form>
       <button class="primary-btn primary-btn--close callback-modal__close" type="button"></button>      
     </section>
-
-
-
-    
-  </div>
+  
   <script type="text/javascript" src="script.js"></script>
   </body>
 </html>

@@ -41,7 +41,9 @@ body{
     max-width: 1440px;
     width: 100%;
     display: flex;
+    position: relative;
 }
+
 .list-reset{
      padding-left: 0;/*стандартные стили для списка*/
     list-style: none;
@@ -63,7 +65,7 @@ body{
     cursor: pointer;
 }
 .main-container{
-    position: relative;
+    
 }
 /*.main-menu**************************************************/
 
@@ -231,8 +233,10 @@ body{
     background-image: url("images/phone.svg");
     margin-right: 16px;
     margin-top: 24px;
+    border: none;
 }
 .main-menu__chat{
+    border: none;
     display: block;
     border-radius: 50%;
     background-color: #ff3e79;
@@ -372,18 +376,17 @@ body{
     border-radius: 6px;
 }
 
-button.link-more{
+
+.link-more{
+    font-size: 16px;
+    line-height: 24px;
+    color: #1B1C21;
+    text-decoration: none;
+    padding-left: 32px;
+    position: relative;
+    margin-top: 10px;
     background: transparent;
     border: none;
-}
-.link-more{
-font-size: 16px;
-line-height: 24px;
-color: #1B1C21;
-text-decoration: none;
-padding-left: 32px;
-position: relative;
-margin-top: 10px;
 }
 .link-more::before{
     content: "";
@@ -1078,7 +1081,20 @@ thead{
 
 /*Заказать звонок****************************************************/
 
-
+.callback-modal{
+    position: absolute;
+    display: none;
+    top: 0;
+    right: 0;
+    transfrm:  translateX(100%);
+    background-color: #ffffff;
+    padding-top: 40px;
+    width: 440px;    
+    height: auto;
+    box-sizing: border-box;
+    
+    
+}
 .callback-modal__title{
     font-size: 24px;
     line-height: 32px;
@@ -1099,21 +1115,7 @@ thead{
     top: 0;
     left: -18px; 
 }
-.callback-modal{
-    position: relative;
-    background-color: #ffffff;
-    padding-top: 40px;
-    width: 440px;    
-    height: auto;
-    box-sizng: border-box;
-    /*position: fixed;
-    z-index: 100;
-    top: 0;
-    right: -400px;
-    width: 100vw;
-    height: 100vh;*/
-    
-}
+
 .callback-modal__form{
     box-sizing: border-box;
     margin-left: 32px;margin-right: 32px;margin-top: 24px;
@@ -1242,18 +1244,16 @@ a {
 /*Обратная связь********************************************/
 
 .feedback-modal{
-    position: relative;
+    position: absolute;
+    display: none;
+    top: 0;
+    right: 0px;
     background-color: #ffffff;
     padding-top: 40px;
     width: 440px;    
     height: auto;
-    box-sizng: border-box;
-    /*position: fixed;
-    z-index: 100;
-    top: 0;
-    right: -400px;
-    width: 100vw;
-    height: 100vh*/
+    box-sizing: border-box;    
+   
     
 }
 .feedback-modal__title{
