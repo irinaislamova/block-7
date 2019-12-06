@@ -33,21 +33,28 @@
     font-style: normal;
 }
 
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+}
 body{
     background: #f8f8f8;
     padding:  0;
     margin: 0;
     font-family: "TT Lakes", "Times New Roman", sans;
-    font-weight: normal;  
-    width: 1440px;  
-    width: 100%;
-    position: relative;    
-}    
-
-
+    font-weight: normal;      
+    /*position: relative; 
+    max-width: 1440px;  
+    width: 100%;  */ 
+} 
 .container{
-    display: flex;
+    display: flex;  
     position: relative;
+    max-width: 1440px;  
+    margin: auto;  
+    width: 100%;
 }
 .overlay{    
     display: none;
@@ -551,7 +558,7 @@ body{
 
 
 /*Левое выпадающее меню*************************************************/
-.left-menu{
+.menu{
     width: 320px;
     min-height: 830px;    
     padding: 19px 24px 34px;

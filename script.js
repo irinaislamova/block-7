@@ -40,15 +40,18 @@ let menu_phone = document.querySelector('.main-menu__phone');
 let callback = document.querySelector('.callback-modal');
 let callback_close = document.querySelector('.callback-modal__close');
 let overlay_callback= document.querySelector('.overlay');
+let left_menu_callback = document.querySelector('.left-menu');
 btn_call.addEventListener('click', function(){
 	console.log('89');
 	callback.style.display = 'block';
 	overlay_callback.style.display = 'block';
+	left_menu_callback.style.display = 'none';
+
 });
 menu_phone.addEventListener('click', function(){
 	console.log('88');
 	callback.style.display = 'block';
-	overlay_callback.style.display = 'block';
+	overlay_callback.style.display = 'block';	
 });
 callback_close.addEventListener('click', function(){
 	console.log('87');
@@ -56,15 +59,19 @@ callback_close.addEventListener('click', function(){
 	overlay_callback.style.display = 'none';
 });
 
+
+
 let btn_mail = document.querySelector('.btn-mail');
 let menu_chat = document.querySelector('.main-menu__chat');
 let feedback = document.querySelector('.feedback-modal');
 let feedback_close = document.querySelector('.feedback-modal__close');
 let overlay_feedback= document.querySelector('.overlay');
+let left_menu_feedback = document.querySelector('.left-menu');
 btn_mail.addEventListener('click', function(){
 	console.log('69');
 	feedback.style.display = 'block';
 	overlay_feedback.style.display = 'block';
+	left_menu_feedback.style.display = 'none';
 });
 menu_chat.addEventListener('click', function(){
 	console.log('68');
